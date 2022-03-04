@@ -27,8 +27,7 @@ public class PostagemController {
 	
 	@GetMapping
 	public ResponseEntity<List<Postagem>> GetAll(){
-		return ResponseEntity.ok(repository.findAll());
-			
+		return ResponseEntity.ok(repository.findAll());			
 	}
 	
 	@PostMapping	
@@ -50,7 +49,7 @@ public class PostagemController {
 	@PutMapping
 		public ResponseEntity<Postagem> put (@RequestBody Postagem postagem){
 			return ResponseEntity.status(HttpStatus.OK).body(repository.save(postagem));
-}
+	}
 	
 	@DeleteMapping("/{id}")
 		public void delete(@PathVariable long id) {
