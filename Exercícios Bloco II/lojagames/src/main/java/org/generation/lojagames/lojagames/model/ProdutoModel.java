@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -34,8 +35,11 @@ public class ProdutoModel {
 	
 	@OneToMany(mappedBy = "produto", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("produto")
-	private List<CategoriaModel> categoria;
-
+	private List<CategoriaModel> categoria; 
+	
+	@ManyToOne
+	@JsonIgnoreProperties("tb_usuarios")
+	private Usuario usuario;
 	
 	public List<CategoriaModel> getCategoria() {
 		return categoria;
@@ -75,6 +79,14 @@ public class ProdutoModel {
 
 	public void setPreco(double preco) {
 		this.preco = preco;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 	
