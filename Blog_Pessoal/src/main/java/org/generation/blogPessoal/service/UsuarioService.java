@@ -2,7 +2,6 @@ package org.generation.blogPessoal.service;
 
 import java.nio.charset.Charset;
 import java.util.Optional;
-import java.util.OptionalLong;
 import org.apache.commons.codec.binary.Base64;
 import org.generation.blogPessoal.model.Usuario;
 import org.generation.blogPessoal.model.UsuarioLogin;
