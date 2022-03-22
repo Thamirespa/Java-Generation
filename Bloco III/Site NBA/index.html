@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LosJames</title>
-     <!-- Importação do CSS do bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <!-- puxando arquivo css criado-->
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-   <!-- MENU--> 
-    <nav class="navbar navbar-expand-lg navbar-light nav-bg">  <!-- alteraração da linnha para puxar o arquivo style.css-->
-        <a class="navbar-brand" href="#"><img src="https://images.unsplash.com/photo-1526086754506-a57f69b4700a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" width="40px">LosJames</a>  <!-- alteração da linha para puxar imagem na barra de navegação-->   
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-warning" href="#"> Notícias <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-warning" href="#">Jogos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-warning " href="#">NBA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-warning" href="#">Plays-ins</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-warning" href="#">Play-offs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-warning" href="#">Classificação</a>
-              </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
 
-<!-- colcolar Carrossel  -->
-<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LosJames</title>
+  <!-- Importação do CSS do bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- puxando arquivo css criado-->
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body class="">
+  <!-- MENU-->
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg">
+    <!-- alteraração da linnha para puxar o arquivo style.css-->
+    <a class="navbar-brand" href="#"><img
+        src="https://images.unsplash.com/photo-1526086754506-a57f69b4700a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+        alt="" width="40px"></a> <!-- alteração da linha para puxar imagem na barra de navegação-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-warning" href="#"> Notícias <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="#">Jogos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning " href="#">NBA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="#">Plays-ins</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="#">Play-offs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="#">Classificação</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- MENU-->
+
+  <h1 src="/fontes/NBA_Lakers_Showtime.otf">
+    <p>Los James</p>
+  </h1>
+
+  <!-- Carrossel  -->
+  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-interval="10000">
-        <img src="https://images.unsplash.com/photo-1532040683343-edbde6dd500d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" class="d-block w-100" alt="...">
+        <img
+          src="https://images.unsplash.com/photo-1532040683343-edbde6dd500d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
+          class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-interval="2000">
-        <img src="https://images.unsplash.com/photo-1586396114948-c15f7fbf45ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+        <img
+          src="https://images.unsplash.com/photo-1586396114948-c15f7fbf45ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-interval="2000">
-        <img src="https://images.unsplash.com/photo-1581852549708-72910bd52cff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="d-block w-100" alt="...">
+        <img
+          src="https://images.unsplash.com/photo-1581852549708-72910bd52cff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-interval="2000">
-        <img src="https://images.unsplash.com/photo-1581573252212-c1cbd4114d82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" class="d-block w-100" alt="...">
+        <img
+          src="https://images.unsplash.com/photo-1581573252212-c1cbd4114d82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+          class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
@@ -72,92 +91,138 @@
       <span class="sr-only">Next</span>
     </button>
   </div>
+  <br>
+  <br>
+<!-- Carrossel  -->
 
-<!-- divisão de linhas e colunas  -->
-      <div class="container-fluid">
+  <!-- divisão de linhas e colunas  -->
+  <div class="container-fluid">
 
-        <div class="row">
+    <div class="row">
 
-            <div class="col bg-warnig">
-                <p>Lisa Leslie - País: Estados Unidos
-                    Posição: pivô
-                    Período: 1997-2009
-                    Times: Los Angeles Sparks
-                    Olimpíadas: 4x (1996, 2000, 2004 e 2008)
-                    Mundial: 2x (1998 e 2002)
-                    WNBA: 2x (2001 e 2002)
-                    Duas vezes campeã da WNBA, três vezes MVP da temporada regular, oito vezes All-Star, integrante do Hall da Fama e primeira mulher a enterrar na história da liga norte-americana. A pivô ex-Los Angeles Sparks é apontada por muitos especialistas como a melhor jogadora de basquete de todos os tempos! 
-                    Primeiro lugar do pódio garantido pra Lisa Leslie.</p>
-                <img src="https://www.esportelandia.com.br/wp-content/uploads/2020/06/Lisa-Leslie-1024x576.jpg" alt="" width="50%">
-            </div>
-            <div class="col bg-warnig">
-                <p>Lebron James - LeBron James é um dos melhores jogadores da história do basquete. Nascido em 30 de dezembro de 1984, em Akron, no estado de Ohio, nos Estados Unidos, ele iniciou sua trajetória na NBA em 2003, no Cleveland Cavaliers. Passou também pelo Miami Heat e, atualmente, defende o Los Angeles Lakers.
+      <div class="col bg-warnig">
+        <p>Lisa Leslie - País: Estados Unidos
+          Posição: pivô
+          Período: 1997-2009
+          Times: Los Angeles Sparks
+          Olimpíadas: 4x (1996, 2000, 2004 e 2008)
+          Mundial: 2x (1998 e 2002)
+          WNBA: 2x (2001 e 2002)
+          Duas vezes campeã da WNBA, três vezes MVP da temporada regular, oito vezes All-Star, integrante do Hall da
+          Fama e primeira mulher a enterrar na história da liga norte-americana. A pivô ex-Los Angeles Sparks é apontada
+          por muitos especialistas como a melhor jogadora de basquete de todos os tempos!
+          Primeiro lugar do pódio garantido pra Lisa Leslie.</p>
+        <img src="https://www.esportelandia.com.br/wp-content/uploads/2020/06/Lisa-Leslie-1024x576.jpg" alt=""
+          width="50%">
+      </div>
+      <div class="col bg-warnig">
+        <p>Lebron James - LeBron James é um dos melhores jogadores da história do basquete. Nascido em 30 de dezembro de
+          1984, em Akron, no estado de Ohio, nos Estados Unidos, ele iniciou sua trajetória na NBA em 2003, no Cleveland
+          Cavaliers. Passou também pelo Miami Heat e, atualmente, defende o Los Angeles Lakers.
+          Apelidado de King James, LeBron foi tetracampeão da NBA, conquistando os títulos em 2012, 2013, 2016 e 2020.
+          Maior pontuador da história dos playoffs da NBA e também do All-Star Game,foi escolhido para o time ideal da liga em 13 temporadas.
+        </p>
+        <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" alt="" width="50%">
+      </div>
 
-                    Apelidado de King James, LeBron foi tetracampeão da NBA, conquistando os títulos em 2012, 2013, 2016 e 2020.</p>
-                <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" alt="" width="50%">
-            </div>
+      <div class="col bg-warnig">
+        <p>Hortência Marcari - Posição: ala
+          Período: 1977-1996
+          Times: São Caetano, Associação Prudentina de Esportes Atléticos, Minercal, Constecca/Sedox, Atlético Sorocaba
+          e Ponte Preta
+          Mundial: 1x (1994)
+          Brasileiro: 7x (1984, 1987, 1989, 1991, 1992, 1994 e 1995)
+          Na nona colocação temos ela, a grande rainha do basquete brasileiro! Hortência Marcari liderou o país no
+          inédito título mundial de 1994, se tornou a maior pontuadora da história da seleção com 3.160 pontos em 127
+          jogos oficiais e, de quebra, entrou para o Hall da Fama.
+          </p>
+        <img
+          src="https://www.esportelandia.com.br/wp-content/uploads/2020/06/Melhores-jogadores-de-basquete-de-todos-os-tempos-1024x576.jpg"
+          alt="" width="50%">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-4">
+  <!-- divisão de linhas e colunas  -->
 
-            <div class="col bg-warnig">
-                <p>Hortência Marcari - Posição: ala
-                    Período: 1977-1996
-                    Times: São Caetano, Associação Prudentina de Esportes Atléticos, Minercal, Constecca/Sedox, Atlético Sorocaba e Ponte Preta
-                    Mundial: 1x (1994)
-                    Brasileiro: 7x (1984, 1987, 1989, 1991, 1992, 1994 e 1995)
-                    Na nona colocação temos ela, a grande rainha do basquete brasileiro! Hortência Marcari liderou o país no inédito título mundial de 1994, se tornou a maior pontuadora da história da seleção com 3.160 pontos em 127 jogos oficiais e, de quebra, entrou para o Hall da Fama. 
-                    A armadora encerrou a carreira com sete títulos brasileiros e diversos estaduais na conta</p>
-                <img src="https://www.esportelandia.com.br/wp-content/uploads/2020/06/Melhores-jogadores-de-basquete-de-todos-os-tempos-1024x576.jpg" alt="" width="50%">
-            </div>
+        <!-- CARD -->
+        <div class="card" style="width: 18rem;">
+          <img src="https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2021/05/space-jam.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Filmes</h5>
+            <p class="card-text">Veja alguns filmes sobre basquete</p>
+            <a href="https://canaltech.com.br/entretenimento/melhores-filmes-basquete/" class="btn btn-primary">
+              Veja</a>
+          </div>
         </div>
       </div>
-      <hr>
-<div class = "container-fluid mt-5" >
-    <div class ="row">
-        <div class="col-4">
-<!-- CARD -->
       <div class="card" style="width: 18rem;">
-        <img src="https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2021/05/space-jam.jpg" class="card-img-top" alt="...">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Filmes</h5>
-          <p class="card-text">Veja alguns filmes sobre o basquete</p>
-          <a href="https://canaltech.com.br/entretenimento/melhores-filmes-basquete/" class="btn btn-primary"> Veja</a>
+          <h5 class="card-title">Site oficial NBA</h5>
+          <p class="card-text">Leia todas as informações oficiais dos jogos e times</p>
+          <a href="https://watch.nba.com/packages?gclid=Cj0KCQjw5-WRBhCKARIsAAId9FmdzMqQT5ZobgDV9dNgsZqsSjloVCypXiQR3pI6b_pNzt7nivKe7mAaAn0aEALw_wcB&cid=nba:ilp:paid:sem:sa360:na:eg:acq:sub:dtc-acq:global:dynlan:BR_G_Secondary_General_Portuguese_HI:NBA_Games_Phrase:nba:43700064898286687:&ef_id=Cj0KCQjw5-WRBhCKARIsAAId9FmdzMqQT5ZobgDV9dNgsZqsSjloVCypXiQR3pI6b_pNzt7nivKe7mAaAn0aEALw_wcB:G:s&s_kwcid=AL!5120!3!583086983677!p!!g!!nba!13821244268!124018936509&gclsrc=aw.ds" class="btn btn-primary">Veja</a>
         </div>
-      </div>  
-      </div> 
-        <div class="col-8">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6QPnJwISugw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <div class="card" style="width: 18rem;">
+          <img src="https://s2.glbimg.com/vdhlYaDqYd4_QdshFpkLt-AnABk=/940x523/e.glbimg.com/og/ed/f/original/2019/04/08/campinas_01.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Loja online </h5>
+            <p class="card-text">Compre os produtos oficiais da NBA</p>
+            <a href="https://www.lojanba.com/" class="btn btn-primary">
+              Veja</a>
+          </div>
         </div>
+      
     </div>
-</div>
-<!-- CARD --> 
+  </div>
+  <br>
+  <br>
+  <!-- CARD -->
 
-      <!-- Footer -->
-<footer class="bg-light text-center ">
+  <!-- vídeo -->
+  <div class="rodape4">
+    <p> Jogadores Famosos</p>
+    <iframe width="560" height="300" src="https://www.youtube.com/embed/6QPnJwISugw" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+   <!-- vídeo -->
+
+  <!-- Footer -->
+  <footer class="rodape2">
     <!-- Grid container -->
-    <div class="container p-4">
-  
+    <div class="rodape4">
+
       <!-- Section: Social media -->
-      <section class="mb-4">
         <!-- Facebook -->
-        
+        <br>
+        <br>
+        <br>
+        <br>
         <strong> Inscreva-se para receber mais notícias da NBA</strong>
-      </section>
-      <!-- Section: Social media -->
-  
-  
-      <!-- Section: Form -->
-      <section class="">
+      <br>
+      <!-- formulário -->
+      
         <form action="" onkeyup="validarTudo()">
           <!--Grid row-->
           <div class="row d-flex justify-content-center">
             <!--Grid column-->
             <div class="col-md-5 col-12">
-                <!-- Name input -->
-                <label class="sr-only" for="nome">Nome</label>
-                <input type="text" class="form-control mb-2 mr-sm-2" id="nome" placeholder="Nome" required>  
-                <p id="txtNome"></p>
+              <!-- Name input -->
+              <label class="sr-only" for="nome">Nome</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="nome" placeholder="Nome" required>
+              <p id="txtNome"></p>
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <label class="form-label" for="email" ></label>
+                <label class="form-label" for="email"></label>
                 <input type="email" id="email" class="form-control" placeholder="Email" required>
                 <p id="txtEmail"></p>
                 <!-- Time input -->
@@ -165,61 +230,68 @@
                 <input type="text" class="form-control mb-2 mr-sm-2" id="time" placeholder="Time" required>
                 <p id="txtTime"></p>
                 <button type="submit" onclick="enviar()" class="btn btn-primary mb-4">
-                    Enviar
-                  </button>
+                  Enviar
+
+                </button>
+                <hr>
               </div>
             </div>
+
             <!--Grid column-->
-  
+
             <!--Grid column-->
-            
+
             <!--Grid column-->
           </div>
           <!--Grid row-->
         </form>
-      </section>
+  
       <!-- Section: Form -->
-  
-  
+
+
       <!-- Section: Text -->
-      <section class="mb-4">
+      <section class="rodape4">
+        
         <p>
-          Veja mais informações  sobre o mundo do basquete nos links abaixo:
+          Veja mais informações sobre o mundo do basquete nos links abaixo:
         </p>
-        <h5 class="text-uppercase">Links</h5>
-        <ul class="list-unstyled  ">
-            <li>
-              <a href="https://www.instagram.com/nba/!" class="text-dark">Instagram</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/nba/" class="text-dark">Facebook</a>
-            </li>
-      
-          </ul>
-      </section>
-  
+        <h5 class="rodape4"></h5>
     </div>
+
+    <ul class="rodape4">
+      <li>
+        <a href="https://www.instagram.com/nba/!" class="text-dark">Instagram</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/nba/" class="text-dark">Facebook</a>
+      </li>
+
+    </ul>
+    </section>
+
     <!-- Grid container -->
-  
+
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <div class="rodape3">
       © 2022 Copyright:
       <a class="text-dark" href="https:/losjames.com/">LosJames.com</a>
     </div>
-    <!-- Copyright --> 
+    <!-- Copyright -->
   </footer>
   <!-- Footer -->
-    
-<!--configuração inicial JavaScript  --> 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+  <!--configuração inicial JavaScript  -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" 
-    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" 
-    crossorigin="anonymous"></script> 
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+
+  <!--Validação do formulário -->
+  <script src="script.js"></script>
 </body>
+
 </html>
